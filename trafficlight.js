@@ -2,20 +2,20 @@ const red = document.getElementById("red");
 const yellow = document.getElementById("yellow");
 const green = document.getElementById("green");
 
-function turnOnLight(light) {
-  light.style.opacity = 1;
-}
-
 function handleKeyPress(event) {
   const numberPressed = event.key;
+  red.style.opacity = 0; // Reset all lights to off initially
+  yellow.style.opacity = 0;
+  green.style.opacity = 0;
   if (numberPressed === "1") {
-    turnOnLight(red);
+    red.style.opacity = 1;
   } else if (numberPressed === "2") {
-    turnOnLight(yellow);
+    yellow.style.opacity = 1;
   } else if (numberPressed === "3") {
-    turnOnLight(green);
+    green.style.opacity = 1;
   }
 }
 
 document.addEventListener("keypress", handleKeyPress);
+
 console.log("JS Prick - Cd")
