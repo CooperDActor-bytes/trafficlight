@@ -18,4 +18,5 @@ function handleKeyPress(event) {
 
 document.addEventListener("keypress", handleKeyPress);
 
+
 console.log("JS Prick - Cd")
